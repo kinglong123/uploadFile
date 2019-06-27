@@ -62,7 +62,7 @@ public class MainActivity extends Activity {
     private Button btnStartUpload6;
 
     private Button btnStartUpload7;
-
+    private Button btnStartUpload8;
     private TextView txtResult;
 
     private TextView textView;
@@ -127,7 +127,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        UploadManager.newInstance(getApplicationContext());
         btnChoseFile = (Button) findViewById(R.id.choseFile);
         btnChoseAllFiles = (Button) findViewById(R.id.choseAllFiles);
         btnStartUpload = (Button) findViewById(R.id.startUpload);
@@ -137,7 +137,7 @@ public class MainActivity extends Activity {
         btnStartUpload5 = (Button) findViewById(R.id.startUpload5);
         btnStartUpload6 = (Button) findViewById(R.id.startUpload6);
         btnStartUpload7 = (Button) findViewById(R.id.startUpload7);
-
+        btnStartUpload8 = (Button) findViewById(R.id.startUpload8);
         txtResult = (TextView) findViewById(R.id.tvData);
         textView = (TextView) findViewById(R.id.groupItem);
         ((Button) findViewById(R.id.jiekou)).setOnClickListener(new OnClickListener() {
@@ -270,6 +270,14 @@ public class MainActivity extends Activity {
 
                         break;
 
+                    case R.id.startUpload8:
+                        String pathUrl8 = txtResult.getText().toString();
+//						uploadMonofile6(pathUrl7);
+                        UploadManager.getInstance().start(pathUrl8);
+
+
+                        break;
+
                     case R.id.startUploadfenkuai:
                         String pathUrl2 = txtResult.getText().toString();
                         HttpUtils.startUploadfenkuai("video", getFilePath(pathUrl2));
@@ -289,6 +297,7 @@ public class MainActivity extends Activity {
         btnStartUpload5.setOnClickListener(btnListener);
         btnStartUpload6.setOnClickListener(btnListener);
         btnStartUpload7.setOnClickListener(btnListener);
+        btnStartUpload8.setOnClickListener(btnListener);
     }
 
     private void uploadMonofilePart(String filename) {
