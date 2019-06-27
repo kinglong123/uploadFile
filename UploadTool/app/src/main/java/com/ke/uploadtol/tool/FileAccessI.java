@@ -30,7 +30,7 @@ public class FileAccessI implements Serializable {
 		return n;
 	}
 
-	// ÿ�ζ�ȡ102400�ֽ�
+
 	public synchronized Detail getContent(long nStart) {
 		Detail detail = new Detail();
 		detail.b = new byte[102400];

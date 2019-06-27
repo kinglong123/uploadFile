@@ -1,11 +1,13 @@
 package com.ke.uploadtol.activity;
 
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Locale;
-import java.util.regex.Pattern;
+import com.ke.uploadtol.R;
+import com.ke.uploadtol.tool.FileAccessI;
+import com.ke.uploadtol.tool.HttpUtils;
+import com.ke.uploadtol.tool.ProgressRequestBody;
+import com.loopj.android.http.AsyncHttpClient;
+import com.loopj.android.http.RequestParams;
+
+import org.json.JSONObject;
 
 import android.app.Activity;
 import android.content.Context;
@@ -18,7 +20,6 @@ import android.os.Message;
 import android.util.Base64;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.WindowManager;
@@ -27,12 +28,20 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.ke.uploadtol.R;
-import com.ke.uploadtol.tool.FileAccessI;
-import com.ke.uploadtol.tool.HttpUtils;
-import com.loopj.android.http.AsyncHttpClient;
-import com.loopj.android.http.RequestParams;
-import org.json.JSONObject;
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.Locale;
+import java.util.regex.Pattern;
+
+import okhttp3.MediaType;
+import okhttp3.MultipartBody;
+import okhttp3.RequestBody;
+import rx.android.schedulers.AndroidSchedulers;
+import rx.functions.Action1;
+import rx.schedulers.Schedulers;
 
 public class MainActivity extends Activity {
 	private final static String TAG = "UPLOADTOL:MainActivity";
@@ -40,6 +49,11 @@ public class MainActivity extends Activity {
 	private Button btnChoseFile;
 	private Button btnChoseAllFiles;
 	private Button btnStartUpload;
+    private Button btnStartUpload2;
+    private Button btnStartUpload3;
+	private Button btnStartUpload5;
+    private Button btnStartUpload6;
+	private Button btnStartUpload7;
 	private TextView txtResult;
 	private TextView textView;
 	private View vie;
@@ -100,8 +114,60 @@ public class MainActivity extends Activity {
 		btnChoseFile = (Button) findViewById(R.id.choseFile);
 		btnChoseAllFiles = (Button) findViewById(R.id.choseAllFiles);
 		btnStartUpload = (Button) findViewById(R.id.startUpload);
+            btnStartUpload2 = (Button) findViewById(R.id.startUploadPart);
+		btnStartUpload3 = (Button) findViewById(R.id.startUploadfenkuai);
+
+		btnStartUpload5 = (Button) findViewById(R.id.startUpload5);
+            btnStartUpload6 = (Button) findViewById(R.id.startUpload6);
+		btnStartUpload7 = (Button) findViewById(R.id.startUpload7);
+
 		txtResult = (TextView) findViewById(R.id.tvData);
 		textView = (TextView) findViewById(R.id.groupItem);
+            ((Button) findViewById(R.id.jiekou)).setOnClickListener(new OnClickListener() {
+               @Override
+               public void onClick(View v) {
+
+                   GitHubClient.INSTANCE.getApi().getStingHelloWorld("longge")
+                           .subscribeOn(Schedulers.io())//上面的 全部在异步线程中，subscribeOn放在的位置很重要，影响前面的doonnex和map的线程
+                           .observeOn(AndroidSchedulers.mainThread())
+                           .subscribe(new Action1<String>() {
+                               @Override
+                               public void call(String s) {
+                                   Log.i(TAG, "call: "+s);
+
+                               }
+                           }, new Action1<Throwable>() {
+                               @Override
+                               public void call(Throwable throwable) {
+                                   Log.e(TAG, "call: "+throwable.getMessage() );
+                               }
+                           });
+               }
+           });
+
+		((Button) findViewById(R.id.jiekou2)).setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+
+				Name name =new Name();
+				name.setName("sss");
+				GitHubClient.INSTANCE.getApi().posTStingHelloWorld2(name)
+						.subscribeOn(Schedulers.io())//上面的 全部在异步线程中，subscribeOn放在的位置很重要，影响前面的doonnex和map的线程
+						.observeOn(AndroidSchedulers.mainThread())
+						.subscribe(new Action1<String>() {
+							@Override
+							public void call(String s) {
+								Log.i(TAG, "call: "+s);
+
+							}
+						}, new Action1<Throwable>() {
+							@Override
+							public void call(Throwable throwable) {
+								Log.e(TAG, "call: "+throwable.getMessage() );
+							}
+						});
+			}
+		});
 		
 		LayoutInflater lay = LayoutInflater.from(this);
 		vie = lay.inflate(R.layout.popup, null);
@@ -137,6 +203,7 @@ public class MainActivity extends Activity {
 						msg.what = ADD_LOG;
 						msg.obj = pathUrl;
 						handler.sendMessage(msg);
+						System.out.println("zzzzzzzzzzzzzzz");
 						try {
 							Log.d(TAG, "before_retStr : "+ pathUrl);
 							HttpUtils.cutFileUpload("video", getFilePath(pathUrl));
@@ -144,6 +211,8 @@ public class MainActivity extends Activity {
 							// TODO Auto-generated catch block
 							e.printStackTrace();
 						}
+
+						System.out.println("zzzzzzzzzzzzzzzeeeeeeeeeeee");
 								/*end upload*/
 						//TODO
 						Message msg2 = Message.obtain();
@@ -158,6 +227,40 @@ public class MainActivity extends Activity {
 						handler.sendMessage(msg3);
 					}
 					break;
+                                    case R.id.startUploadPart:
+					    String pathUrl1 = txtResult.getText().toString();
+					    uploadMonofilePart(pathUrl1);
+
+
+					    break;
+				case R.id.startUpload5:
+					String pathUrl5 = txtResult.getText().toString();
+					uploadMonofile5(pathUrl5);
+
+
+					break;
+
+                                    case R.id.startUpload6:
+                                        String pathUrl6 = txtResult.getText().toString();
+					    uploadMonofile6(pathUrl6);
+
+
+                                        break;
+
+					case R.id.startUpload7:
+						String pathUrl7 = txtResult.getText().toString();
+//						uploadMonofile6(pathUrl7);
+
+						new HttpUtils().startUploadfenkuai2("",pathUrl7);
+
+						break;
+
+
+                                    case R.id.startUploadfenkuai:
+                                        String pathUrl2 = txtResult.getText().toString();
+                                        HttpUtils.startUploadfenkuai("video", getFilePath(pathUrl2));
+                                        break;
+
 				default:  
 					break;  
 				} 
@@ -167,8 +270,167 @@ public class MainActivity extends Activity {
 		btnChoseFile.setOnClickListener(btnListener);
 		btnChoseAllFiles.setOnClickListener(btnListener);
 		btnStartUpload.setOnClickListener(btnListener);
+		btnStartUpload2.setOnClickListener(btnListener);
+                btnStartUpload3.setOnClickListener(btnListener);
+		btnStartUpload5.setOnClickListener(btnListener);
+            btnStartUpload6.setOnClickListener(btnListener);
+		btnStartUpload7.setOnClickListener(btnListener);
 	}
-	
+    private void uploadMonofilePart(String filename){
+        //先创建 service
+
+        //构建要上传的文件
+        File file = new File(filename);
+        RequestBody requestFile =
+                RequestBody.create(MediaType.parse("application/otcet-stream"), file);
+
+	    RequestBody requestFileProgress = new ProgressRequestBody(requestFile,
+			    new ProgressRequestBody.UploadProgressListener() {
+				    @Override
+				    public void onProgress(long currentBytesCount, long totalBytesCount) {
+
+//					    progressBar.setMax((int) totalBytesCount);
+//					    progressBar.setProgress((int) currentBytesCount);
+
+					    System.out.println("(int) totalBytesCount:"+(int) totalBytesCount);
+					    System.out.println("(int) currentBytesCount:"+(int) currentBytesCount);
+				    }
+			    });
+
+
+
+        MultipartBody.Part body =
+                MultipartBody.Part.createFormData("aFile", file.getName(), requestFileProgress);
+
+
+
+
+        String descriptionString = "This is a description";
+        RequestBody description =
+                RequestBody.create(
+                        MediaType.parse("multipart/form-data"), descriptionString);
+        GitHubClient.INSTANCE.getApi().getStingTest(description,body)
+			.subscribeOn(Schedulers.io())//上面的 全部在异步线程中，subscribeOn放在的位置很重要，影响前面的doonnex和map的线程
+			.observeOn(AndroidSchedulers.mainThread())
+			.subscribe(new Action1<String>() {
+				@Override
+				public void call(String s) {
+                                    Log.i(TAG, "call: "+s);
+
+				}
+			}, new Action1<Throwable>() {
+				@Override
+				public void call(Throwable throwable) {
+					Log.e(TAG, "call: "+throwable.getMessage() );
+				}
+			});
+
+
+    }
+
+    private void uploadMonofile6(String filename){
+        //先创建 service
+
+        //构建要上传的文件
+        File file = new File(filename);
+        MultipartBody multipartBody = filesToMultipartBody("file",new String[]{filename},MediaType.parse("application/otcet-stream"));
+        GitHubClient.INSTANCE.getApi().uploadFileWithRequestBodyfengkuai(multipartBody)
+                .subscribeOn(Schedulers.io())//上面的 全部在异步线程中，subscribeOn放在的位置很重要，影响前面的doonnex和map的线程
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Action1<String>() {
+                    @Override
+                    public void call(String s) {
+                        Log.i(TAG, "call: "+s);
+
+                    }
+                }, new Action1<Throwable>() {
+                    @Override
+                    public void call(Throwable throwable) {
+                        Log.e(TAG, "call: "+throwable.getMessage() );
+                    }
+                });
+
+
+    }
+
+	private void uploadMonofile5(String filename){
+		//先创建 service
+
+		//构建要上传的文件
+		File file = new File(filename);
+		MultipartBody multipartBody = filesToMultipartBody("file",new String[]{filename},MediaType.parse("application/otcet-stream"));
+		GitHubClient.INSTANCE.getApi().uploadFileWithRequestBody(multipartBody)
+				.subscribeOn(Schedulers.io())//上面的 全部在异步线程中，subscribeOn放在的位置很重要，影响前面的doonnex和map的线程
+				.observeOn(AndroidSchedulers.mainThread())
+				.subscribe(new Action1<String>() {
+					@Override
+					public void call(String s) {
+						Log.i(TAG, "call: "+s);
+
+					}
+				}, new Action1<Throwable>() {
+					@Override
+					public void call(Throwable throwable) {
+						Log.e(TAG, "call: "+throwable.getMessage() );
+					}
+				});
+
+
+	}
+
+	/**
+	 * 其实也是将File封装成RequestBody，然后再封装成Part，<br>
+	 * 不同的是使用MultipartBody.Builder来构建MultipartBody
+	 * @param key 同上
+	 * @param filePaths 同上
+	 * @param imageType 同上
+	 */
+	public static MultipartBody filesToMultipartBody(String key,
+			String[] filePaths,
+			MediaType imageType) {
+		MultipartBody.Builder builder = new MultipartBody.Builder();
+		for (String filePath : filePaths) {
+			File file = new File(filePath);
+			RequestBody requestBody = RequestBody.create(imageType, file);
+			RequestBody requestFileProgress = new ProgressRequestBody(requestBody,
+					new ProgressRequestBody.UploadProgressListener() {
+						@Override
+						public void onProgress(long currentBytesCount, long totalBytesCount) {
+
+//					    progressBar.setMax((int) totalBytesCount);
+//					    progressBar.setProgress((int) currentBytesCount);
+
+							System.out.println("(int) totalBytesCount:"+(int) totalBytesCount);
+							System.out.println("(int) currentBytesCount:"+(int) currentBytesCount);
+						}
+					});
+			builder.addFormDataPart("userName", "100");
+			builder.addFormDataPart(key, file.getName(), requestFileProgress);
+		}
+
+//		for (String filePath : filePaths) {
+//			File file = new File(filePath);
+//			RequestBody requestBody = RequestBody.create(imageType, file);
+//			RequestBody requestFileProgress = new ProgressRequestBody(requestBody,
+//					new ProgressRequestBody.UploadProgressListener() {
+//						@Override
+//						public void onProgress(long currentBytesCount, long totalBytesCount) {
+//
+////					    progressBar.setMax((int) totalBytesCount);
+////					    progressBar.setProgress((int) currentBytesCount);
+//
+//							System.out.println("(int) totalBytesCount:"+(int) totalBytesCount);
+//							System.out.println("(int) currentBytesCount:"+(int) currentBytesCount);
+//						}
+//					});
+//			builder.addFormDataPart("userName", "longge22");
+//			builder.addFormDataPart(key, file.getName(), requestFileProgress);
+//		}
+		builder.setType(MultipartBody.FORM);
+		return builder.build();
+	}
+
+
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 //		super.onActivityResult(requestCode, resultCode, data);

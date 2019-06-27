@@ -1,79 +1,153 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml:2:1-41:12
+ADDED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:2:1-37:12
+MERGED from [com.jaeger.statusbaruitl:library:1.0.0] D:\Repository\caches\transforms-1\files-1.1\library-1.0.0.aar\8f534e4701acdb859963a0024d0b0125\AndroidManifest.xml:2:1-17:12
+MERGED from [com.trello:rxlifecycle-components:1.0] D:\Repository\caches\transforms-1\files-1.1\rxlifecycle-components-1.0.aar\87c252c17c3f374e952854d03ae40916\AndroidManifest.xml:13:1-19:12
+MERGED from [com.android.support:appcompat-v7:25.0.0] D:\Repository\caches\transforms-1\files-1.1\appcompat-v7-25.0.0.aar\b104b07c13b2bea2415e76df3b3c4bf6\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-v4:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-v4-25.0.0.aar\d82edb4bd81efc5aba876c359fa3c3ab\AndroidManifest.xml:17:1-27:12
+MERGED from [com.trello:rxlifecycle-android:1.0] D:\Repository\caches\transforms-1\files-1.1\rxlifecycle-android-1.0.aar\b8fd73a9105a5709792f0ec3080f1dfd\AndroidManifest.xml:13:1-19:12
+MERGED from [com.jakewharton.rxbinding:rxbinding:0.4.0] D:\Repository\caches\transforms-1\files-1.1\rxbinding-0.4.0.aar\c08e23ab89bb38f16b3ab784cd251d91\AndroidManifest.xml:2:1-8:12
+MERGED from [io.reactivex:rxandroid:1.2.1] D:\Repository\caches\transforms-1\files-1.1\rxandroid-1.2.1.aar\0e4e837438798f605cdea9127d01fa31\AndroidManifest.xml:15:1-21:12
+MERGED from [com.android.support:animated-vector-drawable:25.0.0] D:\Repository\caches\transforms-1\files-1.1\animated-vector-drawable-25.0.0.aar\b3258aa941c0725ea7fceaa27a01818b\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-vector-drawable:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-vector-drawable-25.0.0.aar\a5cba970e2e4574ab4c4a45a9c94d3c0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:support-fragment:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-fragment-25.0.0.aar\f458516257bec4a6cf0da2006e0d920d\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-media-compat:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-media-compat-25.0.0.aar\a18c039af8be1f821b0d0817b68f0ed3\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-utils:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-core-utils-25.0.0.aar\bd3c9eb2ba9e0897d326e20f2d73a3b3\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-ui:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-core-ui-25.0.0.aar\61bc672143d38790d1229517b96a94fe\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-compat:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-compat-25.0.0.aar\23131aa82d1afade43788a79b2c7610a\AndroidManifest.xml:17:1-27:12
+INJECTED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:2:1-37:12
 	package
-		ADDED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml:3:5-31
-		INJECTED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml
-		INJECTED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml
+		ADDED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:3:5-31
+		INJECTED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml
+		INJECTED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml:5:5-30
-		INJECTED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml
-		INJECTED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml
-	android:versionCode
-		ADDED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml:4:5-28
-		INJECTED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml
-		INJECTED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml
+		ADDED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml
+		INJECTED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml:2:11-69
-uses-sdk
-ADDED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:support-v4:23.3.0] E:\AndroidStudioProjects\UploadTool\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
-	android:targetSdkVersion
-		ADDED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml:9:9-38
-		INJECTED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml
-		INJECTED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml
-	android:minSdkVersion
-		ADDED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml:8:9-34
-		INJECTED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml
-		INJECTED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml
+		ADDED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml
+		INJECTED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml
 application
-ADDED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml:11:5-35:19
-MERGED from [com.android.support:support-v4:23.3.0] E:\AndroidStudioProjects\UploadTool\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+ADDED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:7:5-31:19
+MERGED from [com.jaeger.statusbaruitl:library:1.0.0] D:\Repository\caches\transforms-1\files-1.1\library-1.0.0.aar\8f534e4701acdb859963a0024d0b0125\AndroidManifest.xml:11:5-15:19
+MERGED from [com.jaeger.statusbaruitl:library:1.0.0] D:\Repository\caches\transforms-1\files-1.1\library-1.0.0.aar\8f534e4701acdb859963a0024d0b0125\AndroidManifest.xml:11:5-15:19
+MERGED from [com.android.support:appcompat-v7:25.0.0] D:\Repository\caches\transforms-1\files-1.1\appcompat-v7-25.0.0.aar\b104b07c13b2bea2415e76df3b3c4bf6\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:25.0.0] D:\Repository\caches\transforms-1\files-1.1\appcompat-v7-25.0.0.aar\b104b07c13b2bea2415e76df3b3c4bf6\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-v4-25.0.0.aar\d82edb4bd81efc5aba876c359fa3c3ab\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-v4-25.0.0.aar\d82edb4bd81efc5aba876c359fa3c3ab\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.0.0] D:\Repository\caches\transforms-1\files-1.1\animated-vector-drawable-25.0.0.aar\b3258aa941c0725ea7fceaa27a01818b\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.0.0] D:\Repository\caches\transforms-1\files-1.1\animated-vector-drawable-25.0.0.aar\b3258aa941c0725ea7fceaa27a01818b\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-vector-drawable-25.0.0.aar\a5cba970e2e4574ab4c4a45a9c94d3c0\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-vector-drawable:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-vector-drawable-25.0.0.aar\a5cba970e2e4574ab4c4a45a9c94d3c0\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-fragment:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-fragment-25.0.0.aar\f458516257bec4a6cf0da2006e0d920d\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-fragment-25.0.0.aar\f458516257bec4a6cf0da2006e0d920d\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-media-compat-25.0.0.aar\a18c039af8be1f821b0d0817b68f0ed3\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-media-compat-25.0.0.aar\a18c039af8be1f821b0d0817b68f0ed3\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-core-utils-25.0.0.aar\bd3c9eb2ba9e0897d326e20f2d73a3b3\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-core-utils-25.0.0.aar\bd3c9eb2ba9e0897d326e20f2d73a3b3\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-core-ui-25.0.0.aar\61bc672143d38790d1229517b96a94fe\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-core-ui-25.0.0.aar\61bc672143d38790d1229517b96a94fe\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-compat-25.0.0.aar\23131aa82d1afade43788a79b2c7610a\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-compat-25.0.0.aar\23131aa82d1afade43788a79b2c7610a\AndroidManifest.xml:25:5-20
+	android:supportsRtl
+		ADDED from [com.jaeger.statusbaruitl:library:1.0.0] D:\Repository\caches\transforms-1\files-1.1\library-1.0.0.aar\8f534e4701acdb859963a0024d0b0125\AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml:14:9-41
-	android:allowBackup
-		ADDED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:10:9-41
 	android:icon
-		ADDED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml:13:9-45
+		ADDED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:9:9-45
+	android:allowBackup
+		ADDED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml:15:9-40
+		ADDED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:11:9-40
 activity#com.ke.uploadtol.activity.MainActivity
-ADDED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml:16:9-24:20
+ADDED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:12:9-20:20
 	android:label
-		ADDED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml:18:13-45
+		ADDED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:14:13-45
 	android:name
-		ADDED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml:17:13-50
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml:19:13-23:29
+		ADDED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:13:13-50
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:15:13-19:29
 action#android.intent.action.MAIN
-ADDED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml:20:17-69
+ADDED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:16:17-69
 	android:name
-		ADDED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml:20:25-66
+		ADDED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:16:25-66
 category#android.intent.category.LAUNCHER
-ADDED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml:22:17-77
+ADDED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:18:17-77
 	android:name
-		ADDED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml:22:27-74
+		ADDED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:18:27-74
 activity#com.ke.uploadtol.activity.ChoseFileToolActivity
-ADDED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml:26:9-29:20
+ADDED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:22:9-25:20
 	android:label
-		ADDED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml:28:13-47
+		ADDED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:24:13-47
 	android:name
-		ADDED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml:27:13-59
+		ADDED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:23:13-59
 activity#com.ke.uploadtol.activity.ChoseFolderToolActivity
-ADDED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml:31:9-34:20
+ADDED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:27:9-30:20
 	android:label
-		ADDED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml:33:13-51
+		ADDED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:29:13-51
 	android:name
-		ADDED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml:32:13-61
+		ADDED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:28:13-61
 uses-permission#android.permission.INTERNET
-ADDED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml:37:5-67
+ADDED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:33:5-67
 	android:name
-		ADDED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml:37:22-64
+		ADDED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:33:22-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml:38:5-80
+ADDED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:34:5-80
 	android:name
-		ADDED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml:38:22-78
+		ADDED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:34:22-78
 uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
-ADDED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml:39:5-83
+ADDED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:35:5-83
 	android:name
-		ADDED from E:\AndroidStudioProjects\UploadTool\app\src\main\AndroidManifest.xml:39:22-81
+		ADDED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml:35:22-81
+uses-sdk
+INJECTED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml
+INJECTED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml
+MERGED from [com.jaeger.statusbaruitl:library:1.0.0] D:\Repository\caches\transforms-1\files-1.1\library-1.0.0.aar\8f534e4701acdb859963a0024d0b0125\AndroidManifest.xml:7:5-9:41
+MERGED from [com.jaeger.statusbaruitl:library:1.0.0] D:\Repository\caches\transforms-1\files-1.1\library-1.0.0.aar\8f534e4701acdb859963a0024d0b0125\AndroidManifest.xml:7:5-9:41
+MERGED from [com.trello:rxlifecycle-components:1.0] D:\Repository\caches\transforms-1\files-1.1\rxlifecycle-components-1.0.aar\87c252c17c3f374e952854d03ae40916\AndroidManifest.xml:17:5-44
+MERGED from [com.trello:rxlifecycle-components:1.0] D:\Repository\caches\transforms-1\files-1.1\rxlifecycle-components-1.0.aar\87c252c17c3f374e952854d03ae40916\AndroidManifest.xml:17:5-44
+MERGED from [com.android.support:appcompat-v7:25.0.0] D:\Repository\caches\transforms-1\files-1.1\appcompat-v7-25.0.0.aar\b104b07c13b2bea2415e76df3b3c4bf6\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.0.0] D:\Repository\caches\transforms-1\files-1.1\appcompat-v7-25.0.0.aar\b104b07c13b2bea2415e76df3b3c4bf6\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-v4-25.0.0.aar\d82edb4bd81efc5aba876c359fa3c3ab\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-v4-25.0.0.aar\d82edb4bd81efc5aba876c359fa3c3ab\AndroidManifest.xml:21:5-23:54
+MERGED from [com.trello:rxlifecycle-android:1.0] D:\Repository\caches\transforms-1\files-1.1\rxlifecycle-android-1.0.aar\b8fd73a9105a5709792f0ec3080f1dfd\AndroidManifest.xml:17:5-44
+MERGED from [com.trello:rxlifecycle-android:1.0] D:\Repository\caches\transforms-1\files-1.1\rxlifecycle-android-1.0.aar\b8fd73a9105a5709792f0ec3080f1dfd\AndroidManifest.xml:17:5-44
+MERGED from [com.jakewharton.rxbinding:rxbinding:0.4.0] D:\Repository\caches\transforms-1\files-1.1\rxbinding-0.4.0.aar\c08e23ab89bb38f16b3ab784cd251d91\AndroidManifest.xml:6:5-44
+MERGED from [com.jakewharton.rxbinding:rxbinding:0.4.0] D:\Repository\caches\transforms-1\files-1.1\rxbinding-0.4.0.aar\c08e23ab89bb38f16b3ab784cd251d91\AndroidManifest.xml:6:5-44
+MERGED from [io.reactivex:rxandroid:1.2.1] D:\Repository\caches\transforms-1\files-1.1\rxandroid-1.2.1.aar\0e4e837438798f605cdea9127d01fa31\AndroidManifest.xml:19:5-43
+MERGED from [io.reactivex:rxandroid:1.2.1] D:\Repository\caches\transforms-1\files-1.1\rxandroid-1.2.1.aar\0e4e837438798f605cdea9127d01fa31\AndroidManifest.xml:19:5-43
+MERGED from [com.android.support:animated-vector-drawable:25.0.0] D:\Repository\caches\transforms-1\files-1.1\animated-vector-drawable-25.0.0.aar\b3258aa941c0725ea7fceaa27a01818b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.0.0] D:\Repository\caches\transforms-1\files-1.1\animated-vector-drawable-25.0.0.aar\b3258aa941c0725ea7fceaa27a01818b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-vector-drawable-25.0.0.aar\a5cba970e2e4574ab4c4a45a9c94d3c0\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-vector-drawable:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-vector-drawable-25.0.0.aar\a5cba970e2e4574ab4c4a45a9c94d3c0\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-fragment:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-fragment-25.0.0.aar\f458516257bec4a6cf0da2006e0d920d\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-fragment-25.0.0.aar\f458516257bec4a6cf0da2006e0d920d\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-media-compat-25.0.0.aar\a18c039af8be1f821b0d0817b68f0ed3\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-media-compat-25.0.0.aar\a18c039af8be1f821b0d0817b68f0ed3\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-core-utils-25.0.0.aar\bd3c9eb2ba9e0897d326e20f2d73a3b3\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-core-utils-25.0.0.aar\bd3c9eb2ba9e0897d326e20f2d73a3b3\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-core-ui-25.0.0.aar\61bc672143d38790d1229517b96a94fe\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-core-ui-25.0.0.aar\61bc672143d38790d1229517b96a94fe\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-compat-25.0.0.aar\23131aa82d1afade43788a79b2c7610a\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.0.0] D:\Repository\caches\transforms-1\files-1.1\support-compat-25.0.0.aar\23131aa82d1afade43788a79b2c7610a\AndroidManifest.xml:21:5-23:58
+INJECTED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml
+INJECTED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.0.0] D:\Repository\caches\transforms-1\files-1.1\appcompat-v7-25.0.0.aar\b104b07c13b2bea2415e76df3b3c4bf6\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml
+		ADDED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml
+		INJECTED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml
+		ADDED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml
+		INJECTED from F:\cn\e\e-g2\ebrand\UploadTool2\uploadFile\UploadTool\app\src\main\AndroidManifest.xml

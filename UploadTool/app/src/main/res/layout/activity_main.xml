@@ -39,5 +39,47 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/startUpload" />
+    <Button
+            android:id="@+id/startUploadPart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="普通上传MultipartBody.Part " />
 
+    <Button
+            android:id="@+id/startUpload5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="普通上传MultipartBody" />
+
+    <Button
+            android:id="@+id/startUpload6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="普通上传MultipartBodyfenkuai" />
+
+    <Button
+            android:id="@+id/startUpload7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="普通上传MultipartBodyfenkuai2" />
+
+    <Button
+            android:id="@+id/startUploadfenkuai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="分块上传" />
+
+
+
+    <Button
+            android:id="@+id/jiekou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="接口测试" />
+
+    <Button
+            android:id="@+id/jiekou2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="接口测试" />
 </LinearLayout>

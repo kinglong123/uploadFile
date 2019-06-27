@@ -1,13 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 17
-    buildToolsVersion "23.0.3"
+    compileSdkVersion 23
+
+    useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
         applicationId "com.ke.uploadtol"
-        minSdkVersion 8
-        targetSdkVersion 17
+        minSdkVersion 14
+        targetSdkVersion 23
     }
 
     buildTypes {
@@ -19,8 +20,36 @@ android {
 }
 
 dependencies {
+    //noinspection GradleCompatible
     compile 'com.android.support:support-v4:23.3.0'
     compile files('libs/commons-codec-1.8.jar')
     compile files('libs/sun.misc.BASE64Decoder.jar')
     compile files('libs/android-async-http-1.4.8.jar')
+
+
+    compile 'com.squareup.okhttp:okhttp:2.4.0'
+
+    compile 'com.jaeger.statusbaruitl:library:1.0.0'
+    //retrofit和
+
+
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.3.1'
+    compile 'com.squareup.retrofit2:converter-jackson:2.1.0'
+
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxjava:1.1.6'
+
+
+
+
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'com.trello:rxlifecycle:1.0'
+
+// If you want to bind to Android-specific lifecycles
+    compile 'com.trello:rxlifecycle-android:1.0'
+
+// If you want pre-written Activities and Fragments you can subclass as providers
+    compile 'com.trello:rxlifecycle-components:1.0'
 }
